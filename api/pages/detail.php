@@ -1,5 +1,5 @@
 <?php
-require_once '../config/database.php'; // Recupère la connexion à la BDD
+require __DIR__ . '../config/database.php'; // Recupère la connexion à la BDD
 
 // 1. Récupération de l'ID depuis l'URL
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;

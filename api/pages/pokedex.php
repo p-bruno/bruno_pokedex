@@ -1,5 +1,5 @@
 <?php
-require_once '../config/database.php'; // Recupère la connexion à la BDD
+require __DIR__ . '../config/database.php'; // Recupère la connexion à la BDD
 
 // Requête pour récupérer les Pokémon et leurs types groupés
 $query = "SELECT p.pokemon_id, p.pokemon_nom, p.pokemon_img, 
