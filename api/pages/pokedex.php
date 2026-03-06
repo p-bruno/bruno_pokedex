@@ -22,7 +22,7 @@ require __DIR__ . '/../common/header.php';
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
     <?php foreach ($pokemons as $pokemon): ?>
         <div class="col">
-            <a href="detail.php?id=<?= $pokemon['pokemon_id'] ?>" class="text-decoration-none text-dark">
+            <a href="/detail.php?id=<?= $pokemon['pokemon_id'] ?>" class="text-decoration-none text-dark">
                 <div class="card h-100 border-0 bg-transparent">
                     
                     <div class="rounded-3 bg-light p-4 mb-2 shadow-sm text-center">
