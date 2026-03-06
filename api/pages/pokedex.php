@@ -14,7 +14,7 @@ $stmt = $pdo->prepare($query);
 $stmt->execute();
 $pokemons = $stmt->fetchAll();
 
-include '../common/header.php'; 
+require __DIR__ . '/../common/header.php'; 
 ?>
 
 
@@ -52,5 +52,5 @@ include '../common/header.php';
 </div>
 
 <?php 
-include '../common/footer.php'; 
+require __DIR__ . '/../common/footer.php'; 
 ?>
