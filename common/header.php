@@ -14,7 +14,7 @@
                 POKÉDEX
             </a>
             <div class="navbar-nav">
-                <a class="nav-link active" href="#">Accueil</a>
+                <a class="nav-link active" href="http://bruno-pokedex/">Accueil</a>
             </div>
         </div>
     </nav>
