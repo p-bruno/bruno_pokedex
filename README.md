@@ -39,8 +39,8 @@ Le cœur de l'application repose sur une base de données **MySQL**.
 </div>
 
 
-* **Table `pokemon**` : Centralise les attributs intrinsèques de chaque créature.
-* **Table `type**` : Répertorie l'ensemble des catégories disponibles.
-* **Table `stats**` : Répertorie l'ensemble des statistiques des Pokemons.
+* Table `pokemon` : Centralise les attributs intrinsèques de chaque créature.
+* Table `type` : Répertorie l'ensemble des catégories disponibles.
+* Table `stats` : Répertorie l'ensemble des statistiques des Pokemons.
 
 ---
