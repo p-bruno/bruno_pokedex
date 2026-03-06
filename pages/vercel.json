@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.7.0"
+    },
+    "pages/**/*.php": {
+      "runtime": "vercel-php@0.7.0"
+    },
+    "index.php": {
+      "runtime": "vercel-php@0.7.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/pages/pokedex.php"
+    }
+  ]
+}
