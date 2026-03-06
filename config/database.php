@@ -31,7 +31,7 @@ try {
     $pdo = new PDO($dsn, $user, $password, $options);
 
     // Décommenter la ligne suivante pour tester la connexion (à retirer en production)
-    echo "Connexion réussie au Pokédex !";
+    //echo "Connexion réussie au Pokédex !";
 
 } catch (PDOException $e) {
     // En cas d'erreur, on arrête le script et on affiche le message
