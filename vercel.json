@@ -1,7 +1,8 @@
 {
   "functions": {
     "api/*.php": { "runtime": "vercel-php@0.7.4" },
-    "pages/*.php": { "runtime": "vercel-php@0.7.4" }
+    "pages/*.php": { "runtime": "vercel-php@0.7.4" },
+    "common/*.php": { "runtime": "vercel-php@0.7.4" }
   },
   "routes": [
     {
@@ -18,8 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/$1",
-      "continue": true
+      "dest": "/$1"
     }
   ]
 }
