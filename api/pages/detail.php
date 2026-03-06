@@ -104,7 +104,7 @@ require __DIR__ . '/../common/header.php';
                 <?php endforeach; ?>
             </div>
             
-            <a href="/pokedex" class="btn btn-warning fw-bold px-4 py-2 mt-3 shadow-sm">Retour au Pokédex</a>
+            <a href="/" class="btn btn-warning fw-bold px-4 py-2 mt-3 shadow-sm">Retour au Pokédex</a>
         </div>
     </div>
 </div>
