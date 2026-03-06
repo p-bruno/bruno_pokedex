@@ -22,7 +22,7 @@ $stmt->execute(['id' => $id]);
 $pokemon = $stmt->fetch();
 
 
-include '../common/header.php'; 
+require __DIR__ . '/../common/header.php'; 
 ?>
 
 <div class="container py-5">
@@ -110,5 +110,5 @@ include '../common/header.php';
 </div>
 
 <?php 
-include '../common/footer.php'; 
+require __DIR__ . '/../common/footer.php'; 
 ?>
