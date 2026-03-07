@@ -5,9 +5,9 @@ Bienvenue sur le dépôt de mon application **Pokédex**, une plateforme web dyn
 
 ## 🚀 Présentation du Projet
 
-<div style="text-align:center;">
-<video src="./public/VideoDePresentationDuProjetPokedexFinal.mp4" width="854" height="480" controls></video>
-</div>
+
+https://github.com/user-attachments/assets/0b1a3dcd-2f7f-4031-8fc7-1599c6493b35
+
 
 ---
 
