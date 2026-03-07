@@ -1,3 +1,4 @@
+Lien vers le site en production : [brunopokedex.vercel.app](brunopokedex.vercel.app)
 # Projet Pokédex : PHP & MySQL
 
 Bienvenue sur le dépôt de mon application **Pokédex**, une plateforme web dynamique conçue pour explorer l'univers des Pokémon. Ce projet démontre la mise en place d'une architecture client-serveur complète, de la modélisation de données à l'interface utilisateur.
