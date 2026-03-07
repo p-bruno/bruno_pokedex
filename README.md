@@ -50,7 +50,7 @@ Le cœur de l'application repose sur une base de données **MySQL**.
 <img src="./public/Schéma de l&apos;architecture.jpg" height="500px" alt="Aperçu du détail d'un Pokémon">
 </div>
 
-Principe de fonctonnement : 
+Principe de fonctionnement : 
 
 <div style="text-align: center;">
 <img src="./public/Schéma de flux de données.jpg" height="500px" alt="Aperçu du détail d'un Pokémon">
