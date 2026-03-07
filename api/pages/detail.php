@@ -4,18 +4,24 @@ require __DIR__ . '/../config/database.php'; // Recupère la connexion à la BDD
 // 1. Récupération de l'ID depuis l'URL
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
-$query = "SELECT 
-                p.pokemon_id, p.pokemon_nom, p.pokemon_img, p.pokemon_description, 
-                p.pokemon_taille, p.pokemon_poids,
-                s.stats_pv, s.stats_attaque, s.stats_defense, 
-                s.stats_attaque_speciale, s.stats_defense_speciale, s.stats_vitesse,
-                GROUP_CONCAT(t.type_nom SEPARATOR ',') AS types_list
-              FROM pokemon p
-              JOIN stats s ON p.stats_id = s.stats_id
-              JOIN assoc_pokemon_type apt ON p.pokemon_id = apt.pokemon_id
-              JOIN type t ON apt.type_id = t.type_id
-              WHERE p.pokemon_id = :id
-              GROUP BY p.pokemon_id";
+$query = "
+    SELECT 
+        p.pokemon_id, p.pokemon_nom, p.pokemon_img, p.pokemon_description, 
+        p.pokemon_taille, p.pokemon_poids,
+        s.stats_pv, s.stats_attaque, s.stats_defense, 
+        s.stats_attaque_speciale, s.stats_defense_speciale, s.stats_vitesse,
+        GROUP_CONCAT(t.type_nom SEPARATOR ',') AS types_list
+    FROM pokemon p
+    JOIN stats s ON p.stats_id = s.stats_id
+    JOIN assoc_pokemon_type apt ON p.pokemon_id = apt.pokemon_id
+    JOIN type t ON apt.type_id = t.type_id
+    WHERE p.pokemon_id = :id
+    GROUP BY 
+        p.pokemon_id, p.pokemon_nom, p.pokemon_img, p.pokemon_description, 
+        p.pokemon_taille, p.pokemon_poids,
+        s.stats_pv, s.stats_attaque, s.stats_defense, 
+        s.stats_attaque_speciale, s.stats_defense_speciale, s.stats_vitesse;
+    ";
 
 $stmt = $pdo->prepare($query);
 $stmt->execute(['id' => $id]);
