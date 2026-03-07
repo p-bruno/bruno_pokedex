@@ -5,7 +5,9 @@ Bienvenue sur le dépôt de mon application **Pokédex**, une plateforme web dyn
 
 ## 🚀 Présentation du Projet
 
-Ce projet consiste en une application web performante permettant de consulter une base de données exhaustive de Pokémon. L'objectif principal est de proposer une expérience fluide et structurée, inspirée des standards du [Pokédex officiel](https://www.pokemon.com/fr/pokedex).
+<div style="text-align:center;">
+<video src="./public/VideoDePresentationDuProjetPokedexFinal.mp4" width="854" height="480" controls></video>
+</div>
 
 ---
 
