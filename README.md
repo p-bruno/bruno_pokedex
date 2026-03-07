@@ -33,7 +33,7 @@ Une page pour mettre en avant les caractéristiques spécifiques de chaque Poké
 
 Le cœur de l'application repose sur une base de données **MySQL**.
 
-### Modèle de Données (MCD)
+### Conception : Modèle de Données (MCD)
 
 <div style="text-align: center;">
 <img src="./public/MCD Pokedex.jpg" height="500px" alt="Aperçu du détail d'un Pokémon">
@@ -44,4 +44,15 @@ Le cœur de l'application repose sur une base de données **MySQL**.
 * Table `type` : Répertorie l'ensemble des catégories disponibles.
 * Table `stats` : Répertorie l'ensemble des statistiques des Pokemons.
 
+### Architecture
+
+<div style="text-align: center;">
+<img src="./public/Schéma de l&apos;architecture.jpg" height="500px" alt="Aperçu du détail d'un Pokémon">
+</div>
+
+Principe de fonctonnement : 
+
+<div style="text-align: center;">
+<img src="./public/Schéma de flux de données.jpg" height="500px" alt="Aperçu du détail d'un Pokémon">
+</div>
 ---
