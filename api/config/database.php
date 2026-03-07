@@ -25,6 +25,10 @@ try {
     $options = [
         PDO::ATTR_DEFAULT_FETCH_MODE  => PDO::FETCH_ASSOC,       // Retourne les données sous forme de tableau associatif
         PDO::ATTR_EMULATE_PREPARES   => false,                  // Utilise les vraies requêtes préparées
+        // Activer le SSL
+        PDO::MYSQL_ATTR_SSL_CA       => true, 
+        // Optionnel : si votre serveur PHP ne trouve pas les certificats racine
+        PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
     ];
 
     // Création de l'instance PDO
